@@ -1,0 +1,60 @@
+/* header */
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 10%;
+    z-index: 100;
+    border-bottom: 1px solid #000;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    margin-left: 25px;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 1.2rem;
+    /* height: 50vh; */
+    margin: auto;
+}
+
+.card {
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 270px;
+}
+
+.card-container input,
+textarea,
+button {
+    display: block;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: end;
+}

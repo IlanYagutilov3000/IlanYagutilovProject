@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .container-img {
+    background-image: url(../images/Path\ 15.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 78vh;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img>h1 {
+    font: normal normal bold 86px/113px Assistant;
+    letter-spacing: 0px;
+    color: #D3E10E;
+}
+
+.container-img>p {
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.9em;
+}
+
+.form-control label {
+    font: normal normal bold 16px/21px Assistant;
+    letter-spacing: 0px;
+    color: #011560;
+}
+
+.form-control input {
+    width: 418px;
+    height: 50px;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 4px solid #D3E10E;
+}
+
+input:focus-within {
+    outline: none;
+}
+
+.btn-submit {
+    width: 166px;
+    height: 50px;
+    background: #D3E10E 0% 0% no-repeat padding-box;
+    border: none;
+    margin-right: 3em;
+    color: #011560;
+    font: normal normal bold 22px/30px Assistant;
+    margin-top: 1em;
+}
+
+/* end of desktop */
+
+@media (max-width: 768px) {
+
+    .container-img {
+        height: 45vh !important;
+        padding: 0.5em;
+    }
+
+    .container-img h1{
+        font-size: 28px;
+    }
+
+    .container-img p{
+        text-align: center;
+        font-size: 16px;
+    }
+    /* end of container-img */
+    .container-form {
+        flex-direction: column;
+        margin-top: 5em;
+    }
+
+    .form-control {
+        margin-right: 0;
+    }
+
+    .form-control label {
+        font: normal normal bold 12px/14px Heebo;
+        letter-spacing: 0px;
+        color: #011560;
+    }
+
+    .form-control input {
+        width: 286px;
+        height: 34px;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+    }
+
+    .btn-submit {
+        width: 286px;
+        height: 34px;
+        background: #D3E10E 0% 0% no-repeat padding-box;
+        margin-right: 0;
+        font: normal normal bold 14px/19px Heebo;
+        color: #011560;
+    }
+}

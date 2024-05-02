@@ -1,0 +1,45 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.square {
+    width: 140px;
+    height: 140px;
+    background-color: #0c2fdf;
+    opacity: 0.4;
+    position: absolute;
+    /* top: 150px; */
+    left: 500px;
+    top: 150px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    opacity: 0.4;
+
+}
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 150px solid rgb(197, 31, 95);
+    position: absolute;
+    top: 150px;
+    left: 750px;
+    opacity: 0.2;
+
+}

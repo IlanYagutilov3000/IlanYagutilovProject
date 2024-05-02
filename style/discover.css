@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5EEFF;
+}
+
+img {
+    width: 296px;
+    height: 270px;
+}
+
+/* start of the "main" container*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1200px;
+    margin: 0 auto;
+    gap: 1em;
+}
+
+/* end of the "main" start of the container-content */
+.container-content {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #020253;
+
+    h1 {
+        font: normal normal bold 61px/80px Assistant;
+        letter-spacing: 0px;
+        color: #0EE1DA;
+        padding-bottom: 0.5em;
+    }
+
+    p {
+        text-align: center;
+        /* using text-align: center; due to the p tag not aligning to center, maybe, becasue of the dir="rtl" */
+        font: normal normal normal 20px/26px Assistant;
+        color: #F9F9F9;
+
+    }
+}
+
+/* end of container-content */
+.container-form {
+    grid-column: 1 / 3;
+    grid-row: 4 / 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8E097C;
+
+    /* start of the container-form-title */
+    .container-form-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5em;
+
+        h1 {
+            font: normal normal bold 35px/46px Assistant;
+            color: #FFFFFF;
+            padding-bottom: 0.6em;
+        }
+
+        p {
+            text-align: center;
+            font: normal normal normal 20px/26px Assistant;
+            color: #F9F9F9;
+            padding: 0 2.5em;
+        }
+    }
+
+    /* start of the form-control */
+    .form-control {
+        display: flex;
+        flex-direction: column;
+
+        /* start of the label css */
+        label {
+            font: normal normal bold 16px/24px Heebo;
+            color: #0EE1DA;
+        }
+
+        input:focus-within {
+            outline: none;
+        }
+
+        input {
+            width: 500px;
+            height: 60px;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            border-bottom: 4px solid #0EE1DA;
+            margin-bottom: 1.6em;
+        }
+
+        textarea:focus-within {
+            outline: none;
+        }
+
+        textarea {
+            height: 172px;
+            background-color: #E5EEFF;
+            border-bottom: 4px solid #0EE1DA;
+            margin-bottom: 1.6em;
+        }
+    }
+
+    /* end of form-control */
+    .btn-submit {
+        background-color: #0EE1DA;
+        border: 0;
+        width: 100%;
+        color: #011560;
+        /* width: 501px; */
+        height: 60px;
+        font: normal normal bold 24px/33px Heebo;
+    }
+}
+
+/* end of desktop */
+
+@media (max-width: 768px) {
+    img {
+        width: 159px;
+        height: 146px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 350px;
+        /* margin: 0 auto; */
+        gap: 1em;
+    }
+
+    .container-content {
+        height: 340px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        padding: 1em;
+
+        h1{
+            font: normal normal bold 36px/47px Assistant;
+        }
+
+        p{
+            font: normal normal normal 20px/26px Assistant;
+        }
+    }
+
+    .container-form {
+        grid-row: 6 / 9;
+        height: 518px;
+    }
+
+    .container-form-title{
+        margin-bottom: 15px !important;
+        
+    }
+
+    .container-form-title h1{
+        font: normal normal bold 25px/33px Assistant !important;
+    }
+
+    .container-form-title p{
+        font: normal normal normal 15px/19px Assistant !important;
+    }
+
+    /* the reason for all the !important is beacause it doesn't change it, just like in the main protfolio page */
+    .form-control label {
+        font: normal normal bold 7px/10px Heebo !important;
+    }
+
+    .form-control input {
+        width: 278px !important;
+        height: 33px !important;
+    }
+
+    .form-control textarea {
+        width: 278px !important;
+        height: 96px !important;
+    }
+
+    .btn-submit {
+        width: 278px !important;
+        height: 33px !important;
+        font: normal normal bold 12px/16px Heebo !important;
+        margin-bottom: 67px;
+    }
+}

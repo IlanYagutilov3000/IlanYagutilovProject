@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "EB Garamond";
+    overflow-x: hidden;
+    overflow-x: clip !important;
+}
+
+@media(max-width: 767.98px) {
+    .site-header .nav {
+        display: none;
+    }
+
+    .site-header {
+        justify-content: start !important;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 10%;
+    z-index: 100;
+    border-bottom: 1px solid #000;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    margin-left: 25px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 800;
+}
+
+header nav ul li a {
+    font-size: 1.3rem;
+    transition: .3s;
+    color: #000;
+}
+
+.site-header .nav .nav-links li a:hover {
+    color: #FFDA03;
+}
+
+.hero-container2 {
+    font-family: "EB Garamond";
+    /* margin-top: 50px; */
+    background: linear-gradient(to left, #fdc830, #f37335);
+    height: 350px;
+}
+
+.hero-container2 h1 {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding-top: 2.5rem;
+}
+
+.hero-container2 p {
+    max-width: 700px;
+    padding-left: 1rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    margin-bottom: 15px;
+}
+
+.btn-container a {
+    background-color: #FFDA03;
+    border-radius: 50px;
+    padding: 0.4rem;
+    color: #000;
+    transition: 0.3s;
+    margin-left: 15px;
+}
+
+.btn-container a:hover {
+    background-color: #ffee00;
+}
+
+.img-container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container2 img {
+    max-width: 5rem;
+}
+
+.screenshot-img {
+    min-height: 50vw;
+    background: transparent url(../images/project3-img.png)padding-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55vw auto;
+}
+
+.copywrite {
+    background-color: #FFDA03;
+    font-size: 0.8rem;
+    position: fixed;
+    /* leaves dead area below this p */
+    bottom: 0;
+    width: 100vw;
+}

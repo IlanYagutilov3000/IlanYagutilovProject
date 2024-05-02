@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #281EFF, #2DFF8C);
+    overflow-y: hidden;
+}
+
+
+section {
+    height: 100vh;
+}
+
+.project1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    font-family: "Satisfy", Regular;
+    color: #fff;
+    font-size: 10rem;
+    text-shadow: 0 0 36px #00000087;
+
+}
+
+section h4 {
+    font-family: "Varela Round";
+    font-size: 32px;
+    color: #fff;
+}
+
+section p {
+    font-family: "Varela Round";
+    padding-top: 18px;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.project1-form {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    /* Align items to the top */
+    margin-top: 50px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.input-container label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-align: end;
+}
+
+.project1-form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 418px;
+    height: 50px;
+    background: #F6F6F624;
+    border: 2px solid #FFFFFF;
+}
+
+.project1-form button {
+    padding: 10px;
+    width: 190px;
+    height: 50px;
+    background-color: #FFF;
+    margin-right: 20px;
+    border: none;
+    margin-top: 23.5px;
+
+}
+
+input:focus-within {
+    outline: none;
+}
+
+@media (max-width: 767.98px) {
+    .project1-content h1 {
+        font-size: 60px;
+    }
+
+    .project1-content h4 {
+        font-size: 18px;
+    }
+
+    .project1-content p {
+        min-width: 200px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .project1-form {
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .input-container{
+        margin-right: 0;
+    }
+
+    .input-container input{
+        width: 300px;
+    
+    }
+
+    .input-container .label2{
+        margin-top: 8px;
+    }
+
+    .project1-form button{
+        width: 100%;
+        color: #2823FD;
+        margin-right: 0;
+        height: 33px;
+
+    }
+
+}
