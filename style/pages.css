@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +15,14 @@
         display: none;
     }
 
+    /* don't know why it doesn't changes without the !important */
+
     .site-header {
         justify-content: start !important;
+    }
+
+    .screenshot-img img{
+        width: 270px !important;
     }
 }
 
@@ -104,19 +113,23 @@ header nav ul li a {
     max-width: 5rem;
 }
 
-.screenshot-img {
-    min-height: 50vw;
-    background: transparent url(../images/project4-img.png)padding-box;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 55vw auto;
+.screenshot-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot-img img{
+    width: 1000px;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .copywrite {
     background-color: #FFDA03;
     font-size: 0.8rem;
-    position: fixed;
-    /* leaves dead area below this p */
+    position: fixed;/* leaves dead area below this p */
     bottom: 0;
     width: 100vw;
 }
+
