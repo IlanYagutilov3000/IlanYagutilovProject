@@ -12,6 +12,7 @@ $font-family: "EB Garamond";
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -99,7 +100,8 @@ ul {
 .hero-container {
     padding: 5rem;
     font-family: $font-family;
-    margin-top: 50px;
+    height: 30vh;
+    background: linear-gradient(to left, #fdc830, #f37335);
 }
 
 .hero-container h1 {
@@ -168,9 +170,11 @@ header nav ul li a {
     card section ends*/
 }
 
-.main-card h1 {
+.main-card h2 {
     text-align: center;
     margin: 1rem;
+    font-size: 32px;
+    font-weight: 300;
 }
 
 .card img {
@@ -216,7 +220,7 @@ header nav ul li a {
     font-family: $font-family;
 }
 
-.contact-container h1 {
+.contact-container h2 {
     font-size: 1.5rem;
 }
 
@@ -256,7 +260,6 @@ input:focus-within {
     color: #000;
     transition: 0.3s;
     border: transparent;
-    /* margin-top: 0.5rem; */
 }
 
 .contact-container button:hover {

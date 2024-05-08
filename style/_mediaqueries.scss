@@ -1,5 +1,4 @@
-/* navbar for mobile, most if them are writing with !important beccasue it didn't worked for me 
-with out it */
+/* navbar for mobile, most of them are writing with !important beccasue it didn't worked for me with out it, most of the mobile vuew is with !important*/
 @media(max-width: 767.98px) {
     /* .site-header .nav-links {
         display: none;
@@ -39,45 +38,13 @@ with out it */
         box-shadow: 0 1px 0 rgba(255,255,255,0.1)inset;
     }
 
-
-    .square {
-        width: 100px !important;
-        height: 100px !important;
-        position: absolute;
-        top: 100px !important;
-        left: 300px !important;
-    }
-
-    .circle {
-        width: 100px !important;
-        height: 100px !important;
-        position: absolute;
-    }
-
-    .triangle {
-        position: absolute !important;
-        left: 250px !important;
-    }
-
-    .triangle2 {
-        position: absolute !important;
-        left: 450px !important;
-    }
-
     .hero-container {
         padding: 0 !important;
     }
 
-    /* .main-card {
-        height: 1425px;
-    } */
-
     .card-container {
         grid-template-columns: 1fr !important;
-        /* height: 50vh !important; */
-
         width: 100vw;
-
     }
 
     .card-content {
@@ -96,68 +63,7 @@ with out it */
 }
 
 @media (max-width: 403.98px) {
-    .square {
-        width: 100px !important;
-        height: 100px !important;
-        position: absolute;
-        top: 100px !important;
-        left: 250px !important;
-    }
-
-    .triangle {
-        position: absolute !important;
-        left: 100px !important;
-    }
-
-    .triangle2 {
-        position: absolute !important;
-        left: 50px !important;
-    }
-
     .img-container img {
         max-width: 5rem !important;
     }
-}
-
-@media (max-width: 350.98px) {
-    .square {
-        width: 100px !important;
-        height: 100px !important;
-        position: absolute;
-        top: 100px !important;
-        left: 210px !important;
-    }
-
-    .triangle {
-        position: absolute !important;
-        left: 150px !important;
-    }
-
-    .triangle2 {
-        border-left: 10px solid transparent !important;
-        border-right: 80px solid transparent !important;
-        border-bottom: 50px solid rgb(197, 31, 95) !important;
-        position: absolute !important;
-        left: 100px !important;
-    }
-}
-
-@media (max-width: 545px) {
-    .triangle2 {
-        position: absolute !important;
-        left: 300px !important;
-    }
-}
-
-@media (max-width: 770px) {
-    .triangle {
-        position: absolute !important;
-        left: 150px !important;
-    }
-
-    .triangle2 {
-        position: absolute !important;
-        left: 100px !important;
-    }
-
 }
