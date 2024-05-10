@@ -1,41 +1,50 @@
 /* navbar for mobile, most of them are writing with !important beccasue it didn't worked for me with out it, most of the mobile vuew is with !important*/
 @media(max-width: 767.98px) {
-    /* .site-header .nav-links {
-        display: none;
-    } */
-
     .site-header {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         z-index: 100;
     }
 
-    .humburger, .toggle-menu {
-        display: block;
-    }
-
-    .nav-links{
-        justify-content: start;
-        flex-direction: column;
-        align-items: center;
+    .nav-links {
+        display: flex;
         position: fixed;
-        top: 0;
-        right: -300px;
-        background: #f2a30b;
-        width: 300px;
-        height: 100%;
-        padding-top: 65px;
-    }
-
-    .nav-links li{
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
         width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
-    .nav-links li a,
-    .nav-links li a:hover{
-        padding: 30px;
-        font-size: 24px;
-        box-shadow: 0 1px 0 rgba(255,255,255,0.1)inset;
+    .nav-links li {
+        margin: 1rem;
+        border-bottom: 1px solid #000;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .humburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .humburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .humburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .humburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .hero-container {
