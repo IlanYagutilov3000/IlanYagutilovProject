@@ -12,7 +12,10 @@ $font-family: "EB Garamond";
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden !important;
 }
 
 a {
@@ -51,6 +54,7 @@ ul {
     padding: 5rem;
     font-family: $font-family;
     height: 30vh;
+    width: 100%;
     background: linear-gradient(to left, #fdc830, #f37335);
 }
 
@@ -59,12 +63,6 @@ ul {
     font-weight: 800;
     font-size: 1.9rem;
 }
-
-/* .ham-menu {
-    height: 50px;
-    width: 50px;
-
-} */
 
 header nav ul li a {
     text-decoration: none;
@@ -113,11 +111,6 @@ header nav ul li a {
 
 .main-card {
     font-family: $font-family;
-    /* height: 950px; */
-    /* the heigght is here becuuse of the grid
-    the height is at default, needed to chanee it so the new element
-    inmy case the new section(contact me) can go lower after the
-    card section ends*/
 }
 
 .main-card h2 {
@@ -202,17 +195,18 @@ input:focus-within {
     margin-bottom: 0.5rem;
 }
 
-.contact-container button {
+.contact-container .btn {
     background-color: $color;
     font-size: 0.9rem;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 0.7rem;
     color: #000;
     transition: 0.3s;
     border: transparent;
+    width: 20%;
 }
 
-.contact-container button:hover {
+.contact-container .btn:hover {
     background-color: #f2a30b;
     cursor: pointer;
 }

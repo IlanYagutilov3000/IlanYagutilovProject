@@ -7,7 +7,10 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden !important;
 }
 
 a {
@@ -44,6 +47,7 @@ ul {
   padding: 5rem;
   font-family: "EB Garamond";
   height: 30vh;
+  width: 100%;
   background: linear-gradient(to left, #fdc830, #f37335);
 }
 
@@ -53,11 +57,6 @@ ul {
   font-size: 1.9rem;
 }
 
-/* .ham-menu {
-    height: 50px;
-    width: 50px;
-
-} */
 header nav ul li a {
   text-decoration: none;
   font-family: "EB Garamond", sans-serif;
@@ -105,11 +104,6 @@ header nav ul li a {
 
 .main-card {
   font-family: "EB Garamond";
-  /* height: 950px; */
-  /* the heigght is here becuuse of the grid
-  the height is at default, needed to chanee it so the new element
-  inmy case the new section(contact me) can go lower after the
-  card section ends*/
 }
 
 .main-card h2 {
@@ -192,17 +186,18 @@ input:focus-within {
   margin-bottom: 0.5rem;
 }
 
-.contact-container button {
+.contact-container .btn {
   background-color: #FFDA03;
   font-size: 0.9rem;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 0.7rem;
   color: #000;
   transition: 0.3s;
   border: transparent;
+  width: 20%;
 }
 
-.contact-container button:hover {
+.contact-container .btn:hover {
   background-color: #f2a30b;
   cursor: pointer;
 }
@@ -273,6 +268,10 @@ button {
 
 /* navbar for mobile, most of them are writing with !important beccasue it didn't worked for me with out it, most of the mobile vuew is with !important*/
 @media (max-width: 767.98px) {
+  body {
+    overflow-x: hidden !important;
+    /* overflow is added due to the screen being wierd  */
+  }
   .site-header {
     display: flex;
     justify-content: space-between;
@@ -333,5 +332,22 @@ button {
 @media (max-width: 403.98px) {
   .img-container img {
     max-width: 5rem !important;
+  }
+}
+@media (max-width: 1024.98px) {
+  .hero-container {
+    padding: 0 !important;
+  }
+  .card-container {
+    grid-template-columns: 1fr !important;
+    width: 100vw;
+  }
+  .card-content {
+    padding: 0;
+    padding-bottom: 1.5rem;
+  }
+  .card {
+    margin-bottom: 1rem !important;
+    margin: auto;
   }
 }/*# sourceMappingURL=main.css.map */

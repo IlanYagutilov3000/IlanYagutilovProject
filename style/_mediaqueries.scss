@@ -1,5 +1,10 @@
 /* navbar for mobile, most of them are writing with !important beccasue it didn't worked for me with out it, most of the mobile vuew is with !important*/
 @media(max-width: 767.98px) {
+    body {
+        overflow-x: hidden !important;
+        /* overflow is added due to the screen being wierd  */
+    }
+
     .site-header {
         display: flex;
         justify-content: space-between;
@@ -74,5 +79,26 @@
 @media (max-width: 403.98px) {
     .img-container img {
         max-width: 5rem !important;
+    }
+}
+
+@media (max-width:1024.98px) {
+    .hero-container {
+        padding: 0 !important;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr !important;
+        width: 100vw;
+    }
+
+    .card-content {
+        padding: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    .card {
+        margin-bottom: 1rem !important;
+        margin: auto;
     }
 }
