@@ -11,18 +11,55 @@
 }
 
 @media(max-width: 767.98px) {
-    .site-header .nav {
-        display: none;
-    }
-
     /* don't know why it doesn't changes without the !important */
 
     .site-header {
-        justify-content: start !important;
+        justify-content: space-between !important;
     }
 
-    .screenshot-img img{
+    .screenshot-img img {
         width: 270px !important;
+    }
+
+    .nav-links {
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links li {
+        margin: 1rem;
+        border-bottom: 1px solid #000;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .humburger {
+        display: block !important;
+        cursor: pointer;
+    }
+
+    .humburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .humburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .humburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
 
@@ -55,6 +92,20 @@ ul {
     font-size: 2rem;
     color: #000;
     font-weight: 800;
+}
+
+.humburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 header nav ul li a {
@@ -113,13 +164,13 @@ header nav ul li a {
     max-width: 5rem;
 }
 
-.screenshot-img{
+.screenshot-img {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.screenshot-img img{
+.screenshot-img img {
     width: 1000px;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -128,8 +179,8 @@ header nav ul li a {
 .copywrite {
     background-color: #FFDA03;
     font-size: 0.8rem;
-    position: fixed;/* leaves dead area below this p */
+    position: fixed;
+    /* leaves dead area below this p */
     bottom: 0;
     width: 100vw;
 }
-
