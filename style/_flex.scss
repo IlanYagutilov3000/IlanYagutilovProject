@@ -44,10 +44,9 @@
     width: 270px;
 }
 
-.card-container input,
-textarea,
-button {
-    display: block;
+.form-control {
+    display: flex;
+    flex-direction: column;
 }
 
 .info-container {

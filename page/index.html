@@ -115,10 +115,22 @@
             <h2>Contact Me</h2>
             <p>Please leave a message</p>
             <form action="">
-                <input type="text" name="name" placeholder="Full name" required>
-                <input type="text" name="phone number" placeholder="Phone Number" required>
-                <input type="email" name="email" placeholder="email" required>
-                <textarea name="" id="" cols="60" rows="5" placeholder="Enter Message" required></textarea>
+                <div class="form-control">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-control">
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="text" name="phone number" id="phone-number" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-control">
+                    <label for="massage">Massage:</label>
+                    <textarea name="massage" id="massage" cols="60" rows="5" required></textarea>
+                </div>
                 <input type="submit" class="btn"></input>
             </form>
         </section>

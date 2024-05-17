@@ -168,7 +168,7 @@ header nav ul li a {
   padding: 0.8rem 0.8rem;
   border-radius: 10px;
   border-color: #FFDA03;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
   display: block;
   width: 40dvw;
 }
@@ -252,10 +252,9 @@ input:focus-within {
   width: 270px;
 }
 
-.card-container input,
-textarea,
-button {
-  display: block;
+.form-control {
+  display: flex;
+  flex-direction: column;
 }
 
 .info-container {
@@ -324,9 +323,6 @@ button {
   .card {
     margin-bottom: 1rem !important;
     margin: auto;
-  }
-  .contact-container {
-    width: 100vw !important;
   }
 }
 @media (max-width: 403.98px) {
