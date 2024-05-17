@@ -1,2 +1,2 @@
 This a portfolio project that was required by our college to make.
-It's simple CSS, HTML, Bootstrap.
+It's simple CSS, HTML and Bootstrap.
