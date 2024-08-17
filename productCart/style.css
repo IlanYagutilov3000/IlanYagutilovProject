@@ -1,0 +1,16 @@
+.for-media {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+    table {
+        width: 50px !important
+    }
+
+    .for-media {
+        display: flex;
+        justify-content: center !important;
+        font-size: 12px;
+    }
+}

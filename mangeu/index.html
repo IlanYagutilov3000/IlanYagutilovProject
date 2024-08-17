@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="display-4 text-light text-bg-secondary">
+            MANAGE-U <i class="fa-solid fa-check-double text-warning"></i>
+        </h1>
+        <div class="form-floating mb-3 d-inline-block w-50">
+            <input type="text" class="form-control" id="description" placeholder="Task description" />
+            <label for="description">Task description</label>
+        </div>
+        <button class="btn btn-warning" onclick="addMewTask()">+</button>
+
+        <div>
+            <h5 class="display-5 text-success">Active</h5>
+            <ul id="activeTasks" class="list-group mb-4"></ul>
+        </div>
+        <div>
+            <h5 class="display-5 text-danger">Completed</h5>
+            <ul id="completedTasks" class="list-group mb-4"></ul>
+        </div>
+    </div>
+    <script src="scripts.js" type="module"></script>
+</body>
+
+</html>

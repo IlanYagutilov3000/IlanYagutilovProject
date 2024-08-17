@@ -11,6 +11,7 @@ html {
 
 body {
   overflow-x: hidden !important;
+  font-family: "EB Garamond";
 }
 
 a {
@@ -45,7 +46,6 @@ ul {
 
 .hero-container {
   padding: 5rem;
-  font-family: "EB Garamond";
   height: 30vh;
   width: 100%;
   background: linear-gradient(to left, #fdc830, #f37335);
@@ -75,10 +75,6 @@ header nav ul li a {
   color: #FFDA03;
 }
 
-.about-me {
-  font-family: "EB Garamond";
-}
-
 .about-me img {
   max-width: 100px;
 }
@@ -104,11 +100,12 @@ header nav ul li a {
 
 .main-card {
   font-family: "EB Garamond";
+  margin-bottom: 32px;
 }
 
 .main-card h2 {
   text-align: center;
-  margin: 1rem;
+  margin-top: 1rem;
   font-size: 32px;
   font-weight: 300;
 }
@@ -117,6 +114,119 @@ header nav ul li a {
   max-width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
+}
+
+.wrapper-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card1 {
+  width: 16em;
+  height: 22em;
+  position: relative;
+  max-width: 0 1em;
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.card1 h3 {
+  color: #000;
+  font-size: 18pt;
+}
+
+.card1 .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(154, 210, 231, 0.8);
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 18px;
+}
+
+.card1:hover .overlay {
+  opacity: 1;
+}
+
+.card1 .btn {
+  padding: 0.6em 1.3em;
+  text-decoration: none;
+  color: #fff;
+  border: 2px #fff solid;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+
+.card1 .btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.card1:hover .btn,
+.card1:hover h3 {
+  transform: translate(0);
+}
+
+.card2 {
+  background: url(../images/snake.png) center;
+  background-size: cover;
+}
+
+.card3 {
+  background: url(../images/manageu.png) center;
+  background-size: cover;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+
+.card4 {
+  background: url(../images/calculator.png) center;
+  background-size: cover;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+
+.card5 {
+  background: url(../images/productCart.png) center;
+  background-size: cover;
+  background-size: 380px;
+  background-repeat: no-repeat;
+}
+
+.card6 {
+  background: url(../images/capitalFlag.png) center;
+  background-size: cover;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+
+.card7 {
+  background: url(../images/tictaktoe.png) center;
+  background-size: cover;
 }
 
 .card-content {
@@ -152,7 +262,6 @@ header nav ul li a {
 
 .contact-container {
   padding: 1rem;
-  font-family: "EB Garamond";
 }
 
 .contact-container h2 {
@@ -194,7 +303,7 @@ input:focus-within {
   color: #000;
   transition: 0.3s;
   border: transparent;
-  width: 20%;
+  width: 80px;
 }
 
 .contact-container .btn:hover {
@@ -236,20 +345,35 @@ input:focus-within {
   align-items: center;
 }
 
-.card-container {
-  width: 70vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  padding: 1.2rem;
-  margin: auto;
+.main-card-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.card-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* .card-container {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 1.2rem;
+    margin: auto;
+} */
 .card {
   background-color: #fafafa;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 270px;
+  width: 255px;
+  margin: 8px;
 }
 
 .form-control {
@@ -312,10 +436,6 @@ input:focus-within {
   .hero-container {
     padding: 0 !important;
   }
-  .card-container {
-    grid-template-columns: 1fr !important;
-    width: 100vw;
-  }
   .card-content {
     padding: 0;
     padding-bottom: 1.5rem;
@@ -324,20 +444,32 @@ input:focus-within {
     margin-bottom: 1rem !important;
     margin: auto;
   }
+  .contact-container input {
+    width: 200px;
+  }
+  .contact-container textarea {
+    width: 200px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 403.98px) {
   .img-container img {
-    max-width: 5rem !important;
+    max-width: 4rem !important;
   }
 }
 @media (max-width: 1024.98px) {
   .hero-container {
     padding: 0 !important;
   }
-  .card-container {
-    grid-template-columns: 1fr !important;
-    width: 100vw;
-  }
   .card-content {
     padding: 0;
     padding-bottom: 1.5rem;
@@ -345,5 +477,10 @@ input:focus-within {
   .card {
     margin-bottom: 1rem !important;
     margin: auto;
+  }
+}
+@media (max-width: 414.98px) {
+  .img-container img {
+    max-width: 4rem !important;
   }
 }/*# sourceMappingURL=main.css.map */

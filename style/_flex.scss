@@ -28,20 +28,36 @@
     align-items: center;
 }
 
+.main-card-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* .card-container {
     width: 70vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     padding: 1.2rem;
     margin: auto;
-}
+} */
 
 .card {
     background-color: #fafafa;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 270px;
+    width: 255px;
+    margin: 8px;
 }
 
 .form-control {
