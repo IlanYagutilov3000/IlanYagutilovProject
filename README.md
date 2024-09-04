@@ -4,7 +4,7 @@ I'm a student at HackerU
 the college gave me a task to build (a protfolio)/ add to the existing one
 JavaScript projects
 
-I added 6 there is a possibilty that I added more
+I added 6, there is a possibilty that I added more
 
 the technology that was used in this project was HTML, CSS, SCSS / SASS, BOOTSRAP, JAVASCRIPT ,REST API
 
