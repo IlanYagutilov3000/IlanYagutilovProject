@@ -1,5 +1,3 @@
-const API_KEY = "38ce246c9a6add42c091594545ea05da";
-const URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&units=metric&q=`
 const quary = document.querySelector("#inputCity");
 const button = document.querySelector("button");
 const cityName = document.querySelector("#city");
